@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+}
+
+.row__parent,
+.column__parent {
+    background-color: antiquewhite;
+    width: 15rem;
+    height: 10rem;
+    margin-bottom: 1rem;
+}
+
+.row__parent {
+    display: flex;
+    flex-direction: row;
+}
+
+.column__parent {
+    display: flex;
+    flex-direction: column;
+}
