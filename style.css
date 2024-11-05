@@ -6,7 +6,8 @@
 }
 
 /* Typo */
-h2 {
+h2,
+h3 {
     text-align: center;
     margin-bottom: 1em;
 }
@@ -14,9 +15,10 @@ h2 {
 /* articles */
 .article__flex__direction,
 .article__flex__wrap {
-    display: flex;
+    display: grid;
     justify-content: center;
-    background-color: rgb(80, 159, 159);
+    background-color: #50D34B;
+    margin: 1rem;
 }
 
 /* Contenair items */
