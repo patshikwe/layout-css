@@ -5,7 +5,13 @@
     box-sizing: border-box;
 }
 
+/* general style */
+body {
+    padding: 0 2rem;
+}
+
 /* Typo */
+
 h2,
 h3 {
     text-align: center;
@@ -18,7 +24,7 @@ h3 {
     display: grid;
     justify-content: center;
     background-color: #50D34B;
-    margin: 1rem;
+    margin: 1rem 0;
 }
 
 /* Contenair items */
@@ -68,22 +74,22 @@ h3 {
 }
 
 /* Property flex direction */
-.row__parent {
+.row {
     display: flex;
     flex-direction: row;
 }
 
-.row__reverse__parent {
+.row__reverse {
     display: flex;
     flex-direction: row-reverse;
 }
 
-.column__parent {
+.column {
     display: flex;
     flex-direction: column;
 }
 
-.column__reverse__parent {
+.column__reverse {
     display: flex;
     flex-direction: column-reverse;
 }
