@@ -34,7 +34,8 @@ h3 {
 .column__reverse,
 .nowrap,
 .wrap,
-.wrap-reverse {
+.wrap-reverse,
+.block {
     background-color: rgb(240, 140, 10);
     width: 15rem;
     height: 10rem;
@@ -108,4 +109,9 @@ h3 {
 .wrap-reverse {
     display: flex;
     flex-wrap: wrap-reverse;
+}
+
+/* No flex, is block */
+.block {
+    display: block;
 }
