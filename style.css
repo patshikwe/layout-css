@@ -21,13 +21,13 @@ body {
     padding: 0 2rem;
 }
 
-/* header and nav */
+/* header, nav and footer */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: .5rem 0;
-    background-color: antiquewhite;
+    background-color: #DAE5D3;
 }
 
 .navbar {
@@ -39,10 +39,18 @@ body {
 ul {
     list-style: none;
     font-size: 1.2rem;
+}
+
+.navbar ul {
     width: 100%;
     display: flex;
     justify-content: space-around;
     background: #ffaa;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 /* articles */
@@ -50,7 +58,7 @@ ul {
 .article__flex__wrap {
     display: grid;
     justify-content: center;
-    background-color: #50D34B;
+    background-color: #B9EBFF;
     margin: 1rem 0;
 }
 
@@ -141,4 +149,14 @@ ul {
 /* No flex, is block */
 .block {
     display: block;
+}
+
+/* footer */
+.footer {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+    line-height: 1.8;
+    background-color: #83DBFF;
 }
