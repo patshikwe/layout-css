@@ -1,0 +1,53 @@
+/* file for flex-box */
+
+/* Contenair items */
+.row,
+.column,
+.row__reverse,
+.column__reverse,
+.nowrap,
+.wrap,
+.wrap-reverse,
+.block {
+    background-color: rgb(240, 140, 10);
+    width: 15rem;
+    height: 10rem;
+    margin-bottom: 1rem;
+}
+
+/* Property flex direction */
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.row__reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.column__reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/* Property flex-wrap */
+.nowrap {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrap-reverse {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
