@@ -25,6 +25,11 @@ body {
     padding: 0 2rem;
 }
 
+section {
+    background-color: #83DBFF;
+    margin: .8rem 0;
+}
+
 /* header, nav and footer */
 .header {
     display: flex;
