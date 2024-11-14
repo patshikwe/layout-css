@@ -7,6 +7,18 @@
     /* Deux colonnes de largeur égale */
     grid-gap: 20px;
     /* Espacement de 20 pixels entre les éléments */
+    margin: 20px;
+}
+
+.two .container {
+    display: grid;
+    /* Déclare un conteneur de grille */
+    grid-template-columns: 1fr 1fr;
+    /* Définit deux colonnes de largeur égale */
+    grid-template-rows: 50px 50px;
+    /* Définit deux lignes de hauteur fixe de 50 pixels */
+    grid-gap: 20px;
+    /* Espacement de 20 pixels entre les éléments de la grille */
 }
 
 /* Style des éléments de la grille */
