@@ -86,3 +86,26 @@
     /* Espacement intérieur */
     margin-bottom: .5rem;
 }
+
+/* Classe des articles */
+.article1 {
+    grid-column: 4 / 7;
+    /* Occupe trois colonnes */
+}
+
+.article2 {
+    grid-column: 7 / 10;
+    /* Occupe trois colonnes */
+}
+
+.article1,
+.article2 {
+    grid-row: 3 / 5;
+    /* Occupe deux lignes */
+    background-color: #c9c9c9;
+    /* Couleur de fond */
+    padding: 20px;
+    /* Espacement intérieur */
+    color: #000;
+    /* Couleur du texte */
+}
