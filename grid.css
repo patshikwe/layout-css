@@ -28,3 +28,20 @@
     padding: 20px;
     /* Espacement intérieur de 20 pixels */
 }
+
+.three .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100px 250px 50px;
+    grid-gap: 20px;
+}
+
+.three .item {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+/* .three .item:last-child {
+    grid-column: 1 / -1;
+    text-align: center;
+} */
