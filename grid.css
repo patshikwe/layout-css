@@ -41,7 +41,15 @@
     text-align: center;
 }
 
-/* .three .item:last-child {
-    grid-column: 1 / -1;
-    text-align: center;
-} */
+/* Classe container */
+.four .container {
+    display: grid;
+    /* Déclare un conteneur de grille */
+    grid-template-columns: repeat(12, 1fr);
+    /* Définit 12 colonnes de largeur égale */
+    grid-template-rows: 80px repeat(4, minmax(0, 1fr));
+    /* Définit les hauteurs des lignes */
+    gap: 20px;
+    /* Espacement de 20 pixels entre les éléments de la grille */
+    margin: 1rem;
+}
