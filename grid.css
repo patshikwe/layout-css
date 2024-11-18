@@ -53,3 +53,23 @@
     /* Espacement de 20 pixels entre les éléments de la grille */
     margin: 1rem;
 }
+
+/* Classe couverture */
+.cover {
+    grid-column: 1 / -1;
+    /* Couvre toutes les colonnes */
+    grid-row: 1 / 3;
+    /* Couvre deux lignes */
+    background-color: #c9c9c9;
+    /* Couleur de fond */
+    text-align: center;
+    /* Alignement du texte au centre */
+    padding: 20px;
+    /* Espacement intérieur */
+    font-size: 24px;
+    /* Taille de police */
+    font-weight: bold;
+    /* Gras */
+    color: #000;
+    /* Couleur du texte */
+}
