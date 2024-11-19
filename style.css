@@ -31,6 +31,11 @@ section {
     width: 100%;
 }
 
+.rounded {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+}
+
 /* header, nav and footer */
 .header {
     display: flex;
