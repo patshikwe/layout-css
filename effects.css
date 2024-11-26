@@ -1,0 +1,21 @@
+/* file for effects.html */
+.legacy {
+    all: revert;
+    border: medium solid;
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.legacy em {
+    border: inherit;
+}
+
+p {
+    color: blue;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: green;
+    color: white;
+}

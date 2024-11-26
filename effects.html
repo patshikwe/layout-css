@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les effets et animations CSS</title>
+    <link rel="stylesheet" href="effects.css">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <h1>Les effets CSS</h1>
+        <section class="one">
+            <h2>Portée et héritage en CSS</h2>
+            <div>
+                <h3>Héritage</h3>
+                <div>
+                    <p class="legacy">Ce paragraphe a <em>du texte en emphase</em> à l’intérieur.</p>
+                </div>
+                <div>
+                    <span>Code CSS :</span>
+                    <div>
+                        .legacy {
+                        all: revert;
+                        border: medium solid;
+                        font-size: 200%;
+                        font-weight: bold;
+                        }
+
+                        .legacy em {
+                        border: inherit;
+                        }
+                    </div>
+                </div>
+                <p>
+                    Dans cet exemple de code, nous utilisons la propriété de raccourci ‘all’ qui va permettre
+                    d’appliquer sa
+                    valeur à toutes les propriétés. En utilisant cette approche, le style des paragraphes pour la
+                    propriété
+                    ‘font’ aura sa valeur par défaut. La taille est alors doublée, et la police d’écriture est alors
+                    mise en
+                    bold (gras). Le mot clé ‘inherit’ est appliqué à la propriété border. Ce mot clé impose un héritage.
+                    En
+                    effectuant ce scénario de code, nous obtenons une bordure supplémentaire autour du texte avec une
+                    référence d’emphase (mise en évidence visuelle).
+                </p>
+            </div>
+            <div>
+                <h3>Portée des effects CSS</h3>
+                <div>
+                    <span>code CSS :</span>
+                    <div>
+                        p {
+                        color: blue;
+                        font-size: 16px;
+                        }
+                    </div>
+                    <p>
+                        Dans ce code, nous appliquons un effet à tous les paragraphes d’une page. Le sélecteur utilisé
+                        est ‘p’, nous utilisons le sélecteur pour définir la portée de notre effet sur la page. En
+                        appliquant ce code, tous les paragraphes de notre page auront un style de couleur et une taille
+                        définis.
+                    </p><br>
+                    <button>Exemple</button>
+                    <div>
+                        <span>Code CSS :</span>
+                        <div>
+                            button:hover {
+                            background-color: green;
+                            color: white;
+                            }
+                        </div>
+                        <p>
+                            Ce code représente un exemple de pseudo-classe. Dans cet exemple, nous utilisons la
+                            pseudo-classe ‘:hover’. Cette pseudo-classe permet d’appliquer un effet lorsqu’un élément
+                            précis est survolé par la souris. Dans notre scénario, nous appliquons l’effet qui est
+                            appliqué à l’élément “button”.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
