@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: none;
 }
 
 /* Typo */
@@ -34,6 +35,14 @@ section {
 .rounded {
     border-top: 8px solid #bbb;
     border-radius: 5px;
+}
+
+.warning {
+    border-radius: 5rem;
+    background: red;
+    color: white;
+    padding: .2em;
+    font-size: 1.2rem;
 }
 
 /* header, nav and footer */
