@@ -11,11 +11,59 @@
 }
 
 p {
-    color: blue;
-    font-size: 16px;
+    color: #000091;
+    font-size: 1.2rem;
 }
 
 button:hover {
     background-color: green;
     color: white;
+}
+
+.parallax-container {
+    perspective: 150px;
+    background-color: antiquewhite;
+    height: auto;
+}
+
+.parallax-element {
+    transform: translateZ(-50px) scale(1.5);
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    text-align: center;
+    padding: .2em;
+}
+
+.element {
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    text-align: center;
+    padding: .2em;
+}
+
+.clear-text {
+    font-size: 2.4em;
+    background-image: linear-gradient(45deg, rgb(100, 150, 180), rgb(150, 100, 130), rgb(220, 100, 100));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glowing .5s ease infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
 }
