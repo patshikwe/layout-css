@@ -67,10 +67,10 @@ section {
     padding: 0 8px;
     text-shadow: 1px 1px 1px #000;
     text-align: center;
+    cursor: pointer;
 }
 
 .btn:hover {
-    cursor: pointer;
     background-color: rgba(255, 0, 0, 1);
 }
 
@@ -92,7 +92,7 @@ section {
 
 .navbar {
     display: flex;
-    background: #E48950;
+    /* background: #E48950; */
     width: 50%;
 }
 
@@ -105,7 +105,7 @@ ul {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    background: #ffaa;
+    /* background: #ffaa; */
 }
 
 a {
