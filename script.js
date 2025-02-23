@@ -59,6 +59,22 @@ const blockToRowReverse = () => {
     console.log("in blockToRowReverse");
 }
 
+const blockToColumn = () => {
+    if (column.classList.contains("block") === true) {
+        column.classList.add("column");
+        column.classList.remove("block");
+        columnBtn.innerHTML = "column";
+        columnText.innerHTML = `display : flex; <br> 
+        flex-direction : column;`;
+    } else {
+        column.classList.add("block");
+        column.classList.remove("column");
+        columnBtn.innerHTML = "block";
+        columnText.innerHTML = " Display : block;";
+    }
+    console.log("in blockToColumn");
+}
+
 for (let index = 0; index < btnAll.length; index++) {
     const btnElement = btnAll[index];
 
@@ -74,6 +90,7 @@ for (let index = 0; index < btnAll.length; index++) {
                 console.log(btnElement.id);
                 break;
             case "columnBtn":
+                blockToColumn();
                 console.log(btnElement.id);
                 break;
             case "columnReverseBtn":
