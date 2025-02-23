@@ -8,6 +8,14 @@ const columnReverseBtn = document.querySelector("#columnReverseBtn");
 const nowrapBtn = document.querySelector("#nowrapBtn");
 const wrapBtn = document.querySelector("#wrapBtn");
 const wrapReverseBtn = document.querySelector("#wrapReverseBtn");
+// span
+const rowText = document.querySelector("#rowText");
+const rowReverseText = document.querySelector("#rowReverseText");
+const columnText = document.querySelector("#columnText");
+const columnReverseText = document.querySelector("#columnReverseText");
+const nowrapText = document.querySelector("#nowrapText");
+const wrapText = document.querySelector("#wrapText");
+const wrapReverseText = document.querySelector("#wrapReverseText");
 // div
 const row = document.querySelector("#row");
 const rowReverse = document.querySelector("#rowReverse");
@@ -18,6 +26,23 @@ const wrap = document.querySelector("#wrap");
 const wrapReverse = document.querySelector("#wrapReverse");
 const block = document.querySelector(".block");
 
+// fonctions
+const blockToRow = () => {
+    if (row.classList.contains("block") === true) {
+        row.classList.add("row");
+        row.classList.remove("block");
+        rowBtn.innerHTML = "row";
+        rowText.innerHTML = `display : flex; <br> 
+        flex-direction : row;`;
+    } else {
+        row.classList.add("block");
+        row.classList.remove("row");
+        rowBtn.innerHTML = "block";
+        rowText.innerHTML = " Display : block;";
+    }
+    console.log("in blockToRow");
+}
+
 for (let index = 0; index < btnAll.length; index++) {
     const btnElement = btnAll[index];
 
@@ -25,6 +50,7 @@ for (let index = 0; index < btnAll.length; index++) {
 
         switch (btnElement.id) {
             case "rowBtn":
+                blockToRow();
                 console.log(btnElement.id);
                 break;
             case "rowReverseBtn":
