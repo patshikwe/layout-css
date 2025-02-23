@@ -1,4 +1,14 @@
+/* =========== JS file ====================== */
+// buttons
 const btnAll = document.querySelectorAll(".btn");
+const rowBtn = document.querySelector("#rowBtn");
+const rowReverseBtn = document.querySelector("#rowReverseBtn");
+const columnBtn = document.querySelector("#columnBtn");
+const columnReverseBtn = document.querySelector("#columnReverseBtn");
+const nowrapBtn = document.querySelector("#nowrapBtn");
+const wrapBtn = document.querySelector("#wrapBtn");
+const wrapReverseBtn = document.querySelector("#wrapReverseBtn");
+// div
 const row = document.querySelector("#row");
 const rowReverse = document.querySelector("#rowReverse");
 const column = document.querySelector("#column");
@@ -10,29 +20,30 @@ const block = document.querySelector(".block");
 
 for (let index = 0; index < btnAll.length; index++) {
     const btnElement = btnAll[index];
+
     btnElement.addEventListener('click', () => {
 
-        switch (btnElement.innerHTML) {
-            case "row":
-                console.log("row");
+        switch (btnElement.id) {
+            case "rowBtn":
+                console.log(btnElement.id);
                 break;
-            case "row-reverse":
-                console.log("row-reverse");
+            case "rowReverseBtn":
+                console.log(btnElement.id);
                 break;
-            case "column":
-                console.log("column");
+            case "columnBtn":
+                console.log(btnElement.id);
                 break;
-            case "column-reverse":
-                console.log("column-reverse");
+            case "columnReverseBtn":
+                console.log(btnElement.id);
                 break;
-            case "nowrap":
-                console.log("nowrap");
+            case "nowrapBtn":
+                console.log(btnElement.id);
                 break;
-            case "wrap":
-                console.log("wrap");
+            case "wrapBtn":
+                console.log(btnElement.id);
                 break;
-            case "wrap-reverse":
-                console.log("wrap-reverse");
+            case "wrapReverseBtn":
+                console.log(btnElement.id);
                 break;
             default:
                 break;
