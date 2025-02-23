@@ -3,8 +3,8 @@
 /* Contenair items */
 .row,
 .column,
-.row__reverse,
-.column__reverse,
+.row-reverse,
+.column-reverse,
 .nowrap,
 .wrap,
 .wrap-reverse,
@@ -21,7 +21,7 @@
     flex-direction: row;
 }
 
-.row__reverse {
+.row-reverse {
     display: flex;
     flex-direction: row-reverse;
 }
@@ -31,7 +31,7 @@
     flex-direction: column;
 }
 
-.column__reverse {
+.column-reverse {
     display: flex;
     flex-direction: column-reverse;
 }
