@@ -107,6 +107,38 @@ const blockToNowrap = () => {
     console.log("in blockToNowrap");
 }
 
+const blockToWrap = () => {
+    if (wrap.classList.contains("block") === true) {
+        wrap.classList.add("wrap");
+        wrap.classList.remove("block");
+        wrapBtn.innerHTML = "wrap";
+        wrapText.innerHTML = `display : flex; <br> 
+        flex-direction : wrap;`;
+    } else {
+        wrap.classList.add("block");
+        wrap.classList.remove("wrap");
+        wrapBtn.innerHTML = "block";
+        wrapText.innerHTML = " Display : block;";
+    }
+    console.log("in blockToWrap");
+}
+
+const blockToWrapReverse = () => {
+    if (wrapReverse.classList.contains("block") === true) {
+        wrapReverse.classList.add("wrap-reverse");
+        wrapReverse.classList.remove("block");
+        wrapReverseBtn.innerHTML = "wrap-reverse";
+        wrapReverseText.innerHTML = `display : flex; <br> 
+        flex-direction : wrap;`;
+    } else {
+        wrapReverse.classList.add("block");
+        wrapReverse.classList.remove("wrap-reverse");
+        wrapReverseBtn.innerHTML = "block";
+        wrapReverseText.innerHTML = " Display : block;";
+    }
+    console.log("in blockToWrapReverse");
+}
+
 for (let index = 0; index < btnAll.length; index++) {
     const btnElement = btnAll[index];
 
@@ -134,9 +166,11 @@ for (let index = 0; index < btnAll.length; index++) {
                 console.log(btnElement.id);
                 break;
             case "wrapBtn":
+                blockToWrap();
                 console.log(btnElement.id);
                 break;
             case "wrapReverseBtn":
+                blockToWrapReverse();
                 console.log(btnElement.id);
                 break;
             default:
