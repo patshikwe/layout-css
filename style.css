@@ -20,11 +20,13 @@ h2,
 h3 {
     text-align: center;
     margin-bottom: 1em;
+    letter-spacing: 1px;
 }
 
 p {
     text-align: center;
     font-size: 1.2rem;
+    letter-spacing: 1px;
 }
 
 /* general style */
@@ -33,9 +35,10 @@ body {
 }
 
 section {
-    background-color: #83DBFF;
+    /* background-color: #83DBFF; */
     margin: .8rem 0;
     width: 100%;
+    padding-top: .5rem;
 }
 
 .rounded {
@@ -80,6 +83,16 @@ section {
         inset 2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
+.container-text {
+    width: 15rem;
+    height: 5rem;
+    background: #fff;
+    text-align: center;
+    padding: 2px;
+    box-shadow: #888282 5px 5px 5px;
+    letter-spacing: 1px;
+}
+
 /* header, nav and footer */
 .header {
     display: flex;
@@ -121,6 +134,8 @@ a {
     /* justify-content: center; */
     background-color: #B9EBFF;
     margin: 1rem 0;
+    padding-top: .5rem;
+    box-shadow: #cbc0c0 0px 0px 2px 5px;
 }
 
 /* Items, icons */
