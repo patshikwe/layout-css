@@ -129,7 +129,7 @@ const blockToWrapReverse = () => {
         wrapReverse.classList.remove("block");
         wrapReverseBtn.innerHTML = "wrap-reverse";
         wrapReverseText.innerHTML = `display : flex; <br> 
-        flex-direction : wrap;`;
+        flex-direction : wrap-reverse;`;
     } else {
         wrapReverse.classList.add("block");
         wrapReverse.classList.remove("wrap-reverse");
