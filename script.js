@@ -75,6 +75,22 @@ const blockToColumn = () => {
     console.log("in blockToColumn");
 }
 
+const blockToColumnReverse = () => {
+    if (columnReverse.classList.contains("block") === true) {
+        columnReverse.classList.add("column-reverse");
+        columnReverse.classList.remove("block");
+        columnReverseBtn.innerHTML = "column-reverse";
+        columnReverseText.innerHTML = `display : flex; <br> 
+        flex-direction : column-reverse;`;
+    } else {
+        columnReverse.classList.add("block");
+        columnReverse.classList.remove("column-reverse");
+        columnReverseBtn.innerHTML = "block";
+        columnReverseText.innerHTML = " Display : block;";
+    }
+    console.log("in blockToColumnReverse");
+}
+
 for (let index = 0; index < btnAll.length; index++) {
     const btnElement = btnAll[index];
 
@@ -94,6 +110,7 @@ for (let index = 0; index < btnAll.length; index++) {
                 console.log(btnElement.id);
                 break;
             case "columnReverseBtn":
+                blockToColumnReverse();
                 console.log(btnElement.id);
                 break;
             case "nowrapBtn":
