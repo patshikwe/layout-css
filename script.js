@@ -91,6 +91,22 @@ const blockToColumnReverse = () => {
     console.log("in blockToColumnReverse");
 }
 
+const blockToNowrap = () => {
+    if (nowrap.classList.contains("block") === true) {
+        nowrap.classList.add("nowrap");
+        nowrap.classList.remove("block");
+        nowrapBtn.innerHTML = "nowrap";
+        nowrapText.innerHTML = `display : flex; <br> 
+        flex-direction : nowrap;`;
+    } else {
+        nowrap.classList.add("block");
+        nowrap.classList.remove("nowrap");
+        nowrapBtn.innerHTML = "block";
+        nowrapText.innerHTML = " Display : block;";
+    }
+    console.log("in blockToNowrap");
+}
+
 for (let index = 0; index < btnAll.length; index++) {
     const btnElement = btnAll[index];
 
@@ -114,6 +130,7 @@ for (let index = 0; index < btnAll.length; index++) {
                 console.log(btnElement.id);
                 break;
             case "nowrapBtn":
+                blockToNowrap();
                 console.log(btnElement.id);
                 break;
             case "wrapBtn":
